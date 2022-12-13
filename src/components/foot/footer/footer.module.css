@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  color: white;
+  background-color: #000;
+  width: 100%;
+  height: 200px;
+}
+
+.site_name {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+}
+
+.contact {
+  margin: 2%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.adress_and_socs {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.adress {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.adress_field {
+  margin: 0;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.7);
+}
+.socs_container {
+  height: 50%;
+}
+.socs_container h3 {
+  margin: 5px;
+}
+.soc_name_container {
+  display: flex;
+  justify-content: center;
+}
+.soc_name_container > img {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 670px) {
+  .site_name {
+    width: 40%;
+  }
+  .contacts {
+    width: 30%;
+  }
+  .adress_and_socs {
+    width: 30%;
+  }
+}

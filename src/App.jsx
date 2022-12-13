@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/foot/footer/Footer.jsx';
 import Header from './components/head/header/Header.jsx';
 import Indent from './components/head/indent/Indent.jsx';
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header height={headerSize} />
       <Indent indentSize={headerSize} />
+      <Footer />
     </>
   );
 }
