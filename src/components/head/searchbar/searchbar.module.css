@@ -1,0 +1,24 @@
+.searchbar {
+  font-size: 16px;
+  height: 40px;
+  border-radius: 25px;
+  border: 0;
+  box-shadow: none;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.searchbar::placeholder {
+  text-align: center;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1125px) {
+  .searchbar {
+    width: 70%;
+    font-size: 13px;
+  }
+
+  .searchbar::placeholder {
+    font-size: 12px;
+  }
+}
