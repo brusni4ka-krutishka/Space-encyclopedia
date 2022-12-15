@@ -16,6 +16,7 @@ export default function MainPage() {
       естественные космические объекты, вращающиеся вокруг Солнца.`}
         pathToImage={planetsImage}
         pathToPage={''}
+        isReversed={true}
       />
       <TextAndImage
         textBackgroundImage={starsBG}
@@ -23,7 +24,6 @@ export default function MainPage() {
         body={`Если вы хотите увидеть завораживающие снимки, то вам определенно сюда :)`}
         pathToImage={milkyWay}
         pathToPage={''}
-        isReversed={true}
       />
     </>
   );
