@@ -3,10 +3,12 @@ import TextAndImage from '../components/mainPageComponents/TextAndImage/TextAndI
 import starsBG from '../assets/images/mainPage/starsbg.png';
 import planetsImage from '../assets/images/mainPage/planets.png';
 import milkyWay from '../assets/images/mainPage/milkyway.png';
+import WelcomeImage from '../components/mainPageComponents/WelcomeImage/WelcomeImage.jsx';
 
 export default function MainPage() {
   return (
     <>
+      <WelcomeImage />
       <TextAndImage
         textBackgroundImage={starsBG}
         head={'Cолнечная система'}
