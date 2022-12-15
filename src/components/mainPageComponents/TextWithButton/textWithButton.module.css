@@ -1,0 +1,11 @@
+.half_of_container {
+  width: 50%;
+  text-align: center;
+}
+.text_container {
+  height: 80%;
+}
+.btn_container {
+  width: 100%;
+  position: relative;
+}

@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  color: white;
+  max-width: 1420px;
+}
+

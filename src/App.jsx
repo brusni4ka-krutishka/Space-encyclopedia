@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/head/header/Header.jsx';
 import Indent from './components/head/indent/Indent.jsx';
+import MainPage from './pages/MainPage.jsx';
 
 function App() {
   const headerSize = 100;
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header height={headerSize} />
       <Indent indentSize={headerSize} />
+      <MainPage />
     </>
   );
 }
