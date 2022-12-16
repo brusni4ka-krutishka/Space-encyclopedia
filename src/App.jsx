@@ -1,3 +1,4 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/foot/footer/Footer.jsx';
 import Header from './components/head/header/Header.jsx';
@@ -10,7 +11,9 @@ function App() {
     <>
       <Header height={headerSize} />
       <Indent indentSize={headerSize} />
-      <MainPage />
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+      </Routes>
       <Footer />
     </>
   );
