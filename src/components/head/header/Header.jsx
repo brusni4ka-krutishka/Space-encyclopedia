@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../navbar/Navbar.jsx';
 import Searchbar from '../searchbar/Searchbar.jsx';
 import ss from './header.module.css';
@@ -27,7 +28,9 @@ export default function Header({ height = 100 }) {
 
   return (
     <div style={containerStyle} className={ss.container}>
-      <div className={ss.logo}>SE</div>
+      <div className={ss.logo}>
+        <Link to={'/'}>SE</Link>
+      </div>
       <div className={ss.navbar}>
         <Navbar />
       </div>
