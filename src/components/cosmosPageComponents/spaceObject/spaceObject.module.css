@@ -1,0 +1,18 @@
+.q {
+  display: flex;
+  justify-content: center;
+}
+.q div {
+  width: 50%;
+  display: block;
+}
+.space {
+  width: 50%;
+}
+
+.img_container {
+  text-align: center;
+}
+.img_container img {
+  width: 80%;
+}
