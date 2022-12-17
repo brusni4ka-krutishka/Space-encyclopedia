@@ -1,5 +1,5 @@
 import React from 'react';
-import SpecificSpaceObjectContainer from '../components/cosmosPageComponents/specificSpaceObjectContainer/SpecificSpaceObjectsContainer.jsx';
+import SpecificSpaceObjectContainer from '../components/cosmosPageComponents/specificSpaceObjectsContainer/SpecificSpaceObjectsContainer.jsx';
 import bg from '../assets/images/cosmosPage/bg.png';
 import { starSet } from '../data/Starset.js';
 export default function CosmosPageStars() {
