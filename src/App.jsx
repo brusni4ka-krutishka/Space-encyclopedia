@@ -5,6 +5,7 @@ import Header from './components/head/header/Header.jsx';
 import Indent from './components/head/indent/Indent.jsx';
 import MainPage from './pages/MainPage.jsx';
 import CosmosPage from './pages/CosmosPage.jsx';
+import CosmosPageStars from './pages/CosmosPageStars.jsx';
 
 function App() {
   const headerSize = 100;
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='/cosmos' element={<CosmosPage />} />
+        <Route path='/cosmos/stars' element={<CosmosPageStars />} />
       </Routes>
       <Footer />
     </>
