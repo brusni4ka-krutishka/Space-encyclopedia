@@ -12,6 +12,18 @@ export default function Navbar() {
         <Link to={'/cosmos'}>Космос</Link>
       </li>
       <li>
+        <Link to={'/cosmos/stars'}>Звезды</Link>
+      </li>
+      <li>
+        <Link to={'/cosmos/littlePlanets'}>Карликовые планеты</Link>
+      </li>
+      <li>
+        <Link to={'/cosmos/planets'}>Планеты</Link>
+      </li>
+      <li>
+        <Link to={'/cosmos/satellites'}>Спутники</Link>
+      </li>
+      <li>
         <Link to={'/gallery'}>Галерея</Link>
       </li>
       <li>
