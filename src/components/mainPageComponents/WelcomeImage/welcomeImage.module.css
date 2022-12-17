@@ -2,3 +2,32 @@
   width: 100%;
   display: block;
 }
+
+.text_block {
+  position: absolute;
+  height: inherit;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  text-align: center;
+}
+
+.text {
+  position: relative;
+  margin: auto;
+  font-weight: normal;
+  font-size: 32pt;
+}
+.text:hover {
+  cursor: default;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decor {
+  text-decoration: underline;
+  font-style: italic;
+}
