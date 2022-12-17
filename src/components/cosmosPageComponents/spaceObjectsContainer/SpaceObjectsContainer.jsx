@@ -1,10 +1,10 @@
 import React from 'react';
 import ss from './spaceObjectsContainer.module.css';
 import bgImage from '../../../assets/images/cosmosPage/bg.png';
-import sun from '../../../assets/images/cosmosPage/sun.png';
-import earth from '../../../assets/images/cosmosPage/earth.png';
-import littlePlanet from '../../../assets/images/cosmosPage/littlePlanet.png';
-import sputnik from '../../../assets/images/cosmosPage/sputnik.png';
+import sun from '../../../assets/images/cosmosPage/stars/Sun.png';
+import earth from '../../../assets/images/cosmosPage/planets/earth.png';
+import littlePlanet from '../../../assets/images/cosmosPage/littlePlanets/littlePlanet.png';
+import sputnik from '../../../assets/images/cosmosPage/satellites/sputnik.png';
 import SpaceObject from '../spaceObject/SpaceObject.jsx';
 export default function SpaceObjectsContainer() {
   return (
