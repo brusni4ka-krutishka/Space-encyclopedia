@@ -13,12 +13,14 @@ export default function TextWithButton({
       style={{ backgroundImage: `url(${textBackgroundImage})` }}
     >
       <div className={ss.text_container}>
-        <h1>{head}</h1>
-        <p> {body}</p>
+        <h1 className={ss.head_txt}>{head}</h1>
+        <p className={ss.body_txt}> {body}</p>
       </div>
 
       <div className={ss.btn_container}>
-        <Link to={pathToPage}>Подробнее</Link>
+        <Link to={pathToPage} className={ss.button}>
+          Подробнее
+        </Link>
       </div>
     </div>
   );

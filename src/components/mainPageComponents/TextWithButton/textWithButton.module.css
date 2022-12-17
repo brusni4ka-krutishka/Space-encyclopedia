@@ -3,9 +3,33 @@
   text-align: center;
 }
 .text_container {
-  height: 80%;
+  height: 70%;
 }
 .btn_container {
   width: 100%;
   position: relative;
+}
+.body_txt {
+  font-size: 30px;
+  margin-top: 10% !important;
+  width: 70%;
+  margin: 0 auto;
+}
+.head_txt {
+  margin-top: 10%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  width: 100px;
+  margin: auto;
+  border-radius: 25px;
+  height: 30px;
+}
+.button:hover {
+  background-color: rgb(199, 201, 208);
 }
