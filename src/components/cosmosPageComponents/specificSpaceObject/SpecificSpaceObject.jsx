@@ -5,6 +5,10 @@ export default function SpecificSpaceObject({
   img,
   undertext,
   alt = 'Space Object',
+  fact,
+  description,
+  characteristicsList = [],
+  intrestingFactsList = [],
 }) {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   return (
@@ -25,11 +29,11 @@ export default function SpecificSpaceObject({
       {isModalOpen && (
         <ModalSpaceObjects
           objectName={undertext}
-          fact={'Залупа'}
+          fact={fact}
           img={img}
-          characteristicsList={[]}
-          description={'Залупа'}
-          intrestingFactsList={[]}
+          characteristicsList={characteristicsList}
+          description={description}
+          intrestingFactsList={intrestingFactsList}
           closeCallback={setIsModalOpen}
         />
       )}
