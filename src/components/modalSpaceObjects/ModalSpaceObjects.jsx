@@ -4,12 +4,20 @@ export default function ModalSpaceObjects({
   objectName,
   img,
   fact,
-  characteristicsList,
+  characteristicsList = [],
   description,
-  intrestingFactsList,
+  intrestingFactsList = [],
+  closeCallback,
 }) {
   return (
-    <div className={ss.container}>
+    <div
+      id={ss.container}
+      onClick={(e) => {
+        if (e.target.id === ss.container) {
+          closeCallback(false);
+        }
+      }}
+    >
       <div id={ss.modal}>
         <h1 className={ss.modal_header}>{objectName}</h1>
         <div className={ss.modal_body}>

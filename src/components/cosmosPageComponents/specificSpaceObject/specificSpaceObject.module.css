@@ -5,3 +5,10 @@
   align-items: center;
 }
 
+.img {
+  display: flex;
+}
+
+.undertext {
+  display: flex;
+}
