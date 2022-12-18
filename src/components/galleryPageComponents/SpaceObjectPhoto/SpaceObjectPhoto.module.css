@@ -1,0 +1,21 @@
+.object_container {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inner_container {
+  background-color: #404040;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 6%;
+}
+.img {
+  display: flex;
+}
+
+.undertext {
+  display: flex;
+}
