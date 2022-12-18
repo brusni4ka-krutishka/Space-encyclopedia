@@ -10,7 +10,11 @@ export default function ModalSpaceObjects() {
           <div className={ss.img_and_text}>
             <img className={ss.modal_body_left_img} src={sun} />
             <div className={ss.modal_body_right_text}>
-              Здесь будет охуенный текст-описание планеты Здесь будет охуенный
+              <h3 className={ss.right_text_head}> Заголовок</h3>
+              <div className={ss.right_text_body}>
+                <p className={ss.key}>Диаметр</p>
+                <p className={ss.value}>120 536 км</p>
+              </div>
             </div>
           </div>
           <div className={ss.modal_body_bottom_text}>
@@ -55,19 +59,11 @@ export default function ModalSpaceObjects() {
             veniam necessitatibus impedit numquam unde dolore iste accusamus
             maxime eius soluta id, magni, dolorum modi! Eveniet enim cupiditate
             nemo soluta.
-            <ul className={ss.list}>
-              <li>List-item</li>
-              <li>List-item</li>
-              <li>List-item</li>
-              <li>List-item</li>
-              <li>List-item</li>
-              <li>List-item</li>
-              <li>List-item</li>
-              <li>List-item</li>
-              <li>List-item</li>
-              <li>List-item</li>
-              <li>List-item</li>
-            </ul>
+            <h2>Сведения и факты о небесном теле</h2>
+            <div className={ss.list}>
+              <div className={ss.list_item_num}>1</div>
+              <div className={ss.list_item_text}>Lfksjdlkfjlk</div>
+            </div>
           </div>
         </div>
       </div>
