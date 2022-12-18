@@ -103,3 +103,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+.list_item_text {
+  width: 90%;
+  text-align: left;
+}
