@@ -9,6 +9,7 @@ import CosmosPageStars from './pages/CosmosPageStars.jsx';
 import CosmosPagePlanets from './pages/CosmosPagePlanets.jsx';
 import CosmosPageSatellites from './pages/CosmosPageSatellites.jsx';
 import CosmosPageLittlePlanets from './pages/CosmosPageLittlePlanets.jsx';
+import GalleryPage from './pages/GalleryPage.jsx';
 
 function App() {
   const headerSize = 100;
@@ -26,6 +27,7 @@ function App() {
           path='/cosmos/littlePlanets'
           element={<CosmosPageLittlePlanets />}
         />
+        <Route path='/gallery' element={<GalleryPage />} />
       </Routes>
       <Footer />
     </>
