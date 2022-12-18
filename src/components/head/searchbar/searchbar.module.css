@@ -20,7 +20,7 @@
   position: relative;
 }
 .results_container_abs {
-  color: #000;
+  color: #000 !important;
   margin-top: 5%;
   position: absolute;
   background-color: white;
@@ -31,11 +31,15 @@
   max-height: 200px;
   overflow-y: scroll;
 }
+
 .results_container_abs .result {
   height: 30px;
   border: 1px solid black;
   border-collapse: collapse;
   margin: 0;
+}
+.result {
+  color: #000;
 }
 .result:hover {
   background-color: #757575;
