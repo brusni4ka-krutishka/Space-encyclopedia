@@ -28,7 +28,7 @@ export default function ModalSpaceObjects({
               <div className={ss.right_text_body}>
                 {characteristicsList.map((item) => {
                   return (
-                    <div key={item['key']}>
+                    <div key={item['key']} className={ss.charcs}>
                       <p className={ss.key}>{item['key']}</p>
                       <p className={ss.value}>{item['value']}</p>
                     </div>
@@ -43,7 +43,7 @@ export default function ModalSpaceObjects({
             <div className={ss.list}>
               {intrestingFactsList.map((item, i) => {
                 return (
-                  <div key={item}>
+                  <div key={item} className={ss.list_item_container}>
                     <div className={ss.list_item_num}>{i + 1}</div>
                     <div className={ss.list_item_text}>{item}</div>
                   </div>
