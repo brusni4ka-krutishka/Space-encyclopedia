@@ -14,7 +14,7 @@ export default function MainPage() {
         head={'Космос'}
         body={`Это все пространство, где расположены планета Земля, солнце, луна, звезды и другие планеты. Космос называют Вселенной – и она не имеет границ. `}
         pathToImage={planetsImage}
-        pathToPage={''}
+        pathToPage={'/cosmos'}
         isReversed={true}
       />
       <TextAndImage
@@ -22,7 +22,7 @@ export default function MainPage() {
         head={'Галерея'}
         body={`Если вы хотите увидеть завораживающие снимки, то вам определенно сюда :)`}
         pathToImage={milkyWay}
-        pathToPage={''}
+        pathToPage={'/gallery'}
       />
     </>
   );
