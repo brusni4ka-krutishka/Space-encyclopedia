@@ -1,3 +1,8 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .searchbar {
   font-size: 16px;
   height: 40px;
@@ -11,7 +16,31 @@
   text-align: center;
   font-size: 16px;
 }
-
+.results_container_rel {
+  position: relative;
+}
+.results_container_abs {
+  color: #000;
+  margin-top: 5%;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 6%;
+  box-shadow: 0 0 15px black;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+.results_container_abs .result {
+  height: 30px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0;
+}
+.result:hover {
+  background-color: #757575;
+  cursor: pointer;
+}
 @media screen and (max-width: 1125px) {
   .searchbar {
     width: 70%;
