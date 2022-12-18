@@ -12,20 +12,22 @@ export default function SpecificSpaceObject({
 }) {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   return (
-    <div
-      className={ss.object_container}
-      onClick={(e) => {
-        if (
-          e.target.className === ss.object_container ||
-          e.target.className === ss.img ||
-          e.target.className === ss.undertext
-        ) {
-          setIsModalOpen(true);
-        }
-      }}
-    >
-      <img className={ss.img} src={img} alt={alt} />
-      <h2 className={ss.undertext}>{undertext}</h2>
+    <>
+      <div
+        className={ss.object_container}
+        onClick={(e) => {
+          if (
+            e.target.className === ss.object_container ||
+            e.target.className === ss.img ||
+            e.target.className === ss.undertext
+          ) {
+            setIsModalOpen(true);
+          }
+        }}
+      >
+        <img className={ss.img} src={img} alt={alt} />
+        <h2 className={ss.undertext}>{undertext}</h2>
+      </div>
       {isModalOpen && (
         <ModalSpaceObjects
           objectName={undertext}
@@ -37,6 +39,6 @@ export default function SpecificSpaceObject({
           closeCallback={setIsModalOpen}
         />
       )}
-    </div>
+    </>
   );
 }
