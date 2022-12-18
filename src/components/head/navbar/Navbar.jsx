@@ -4,31 +4,21 @@ import ss from './navbar.module.css';
 
 export default function Navbar() {
   return (
-    <ul className={ss.navbar__list}>
-      <li>
-        <Link to={'/'}>Главная</Link>
-      </li>
-      <li>
-        <Link to={'/cosmos'}>Космос</Link>
-      </li>
-      <li>
-        <Link to={'/cosmos/stars'}>Звезды</Link>
-      </li>
-      <li>
-        <Link to={'/cosmos/littlePlanets'}>Карликовые планеты</Link>
-      </li>
-      <li>
-        <Link to={'/cosmos/planets'}>Планеты</Link>
-      </li>
-      <li>
-        <Link to={'/cosmos/satellites'}>Спутники</Link>
-      </li>
-      <li>
-        <Link to={'/gallery'}>Галерея</Link>
-      </li>
-      <li>
-        <Link to={'/about'}>О нас</Link>
-      </li>
-    </ul>
+    <div className={ss.navbar__list}>
+      <Link to={'/'}>Главная</Link>
+      <div className={ss.dropdown}>
+        <Link className={ss.dropbtn} to={'/cosmos'}>
+          Космос
+        </Link>
+        <div className={ss.dropdown_content}>
+          <Link to={'/cosmos/stars'}>Звезды</Link>
+          <Link to={'/cosmos/littlePlanets'}>Карликовые планеты</Link>
+          <Link to={'/cosmos/planets'}>Планеты</Link>
+          <Link to={'/cosmos/satellites'}>Спутники</Link>
+        </div>
+      </div>
+      <Link to={'/gallery'}>Галерея</Link>
+      <Link to={'/about'}>О нас</Link>
+    </div>
   );
 }
