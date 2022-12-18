@@ -13,16 +13,30 @@ export default function SpaceObjectsContainer() {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className={ss.half}>
-        <SpaceObject ObjectImg={sun} ObjectName='Звезды' />
+        <SpaceObject
+          ObjectImg={sun}
+          ObjectName='Звезды'
+          linkTo={'/cosmos/stars'}
+        />
         <SpaceObject
           ObjectImg={littlePlanet}
           ObjectName='Карликовые планеты'
           isReversed={true}
+          linkTo={'/cosmos/littlePlanets'}
         />
       </div>
       <div className={ss.half}>
-        <SpaceObject ObjectImg={sputnik} ObjectName='Спутники' />
-        <SpaceObject ObjectImg={earth} ObjectName='Планеты' isReversed={true} />
+        <SpaceObject
+          ObjectImg={sputnik}
+          ObjectName='Спутники'
+          linkTo={'/cosmos/satellites'}
+        />
+        <SpaceObject
+          ObjectImg={earth}
+          ObjectName='Планеты'
+          isReversed={true}
+          linkTo={'/cosmos/planets'}
+        />
       </div>
     </div>
   );
