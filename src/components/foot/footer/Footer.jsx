@@ -22,9 +22,21 @@ export default function Footer() {
         <div className={ss.socs_container}>
           <h3>Мы в соц. сетях:</h3>
           <div className={ss.soc_name_container}>
-            <img src={instIcon} alt='inst ico' />
-            <img src={fbIcon} alt='fb ico' />
-            <img src={vkIcon} alt='vk ico' />
+            <a
+              href='https://instagram.com/ll._llllll_.ll?igshid=NDk5N2NlZjQ='
+              target='_blank'
+            >
+              <img src={instIcon} alt='inst ico' />
+            </a>
+            <a
+              href='https://www.facebook.com/anastasia.novichenko.1'
+              target='_blank'
+            >
+              <img src={fbIcon} alt='fb ico' />
+            </a>
+            <a href='https://vk.com/l_eavemeal_one' target='_blank'>
+              <img src={vkIcon} alt='vk ico' />
+            </a>
           </div>
         </div>
       </div>
