@@ -17,7 +17,6 @@ function App() {
     <>
       <Header height={headerSize} />
       <Indent indentSize={headerSize} />
-      <ModalSpaceObjects />
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='/cosmos' element={<CosmosPage />} />
