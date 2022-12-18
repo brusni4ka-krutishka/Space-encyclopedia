@@ -9,6 +9,7 @@ import CosmosPageStars from './pages/CosmosPageStars.jsx';
 import CosmosPagePlanets from './pages/CosmosPagePlanets.jsx';
 import CosmosPageSatellites from './pages/CosmosPageSatellites.jsx';
 import CosmosPageLittlePlanets from './pages/CosmosPageLittlePlanets.jsx';
+import ModalSpaceObjects from './components/modalSpaceObjects/ModalSpaceObjects.jsx';
 
 function App() {
   const headerSize = 100;
@@ -16,6 +17,7 @@ function App() {
     <>
       <Header height={headerSize} />
       <Indent indentSize={headerSize} />
+      <ModalSpaceObjects />
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='/cosmos' element={<CosmosPage />} />
