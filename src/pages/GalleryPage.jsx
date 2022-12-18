@@ -5,7 +5,7 @@ import bg from '../assets/images/galleryPage/bg.png';
 export default function GalleryPage() {
   return (
     <div style={{ backgroundImage: `url(${bg})` }}>
-      <h1 style={{ textAlign: 'center' }}>Звезды</h1>
+      <h1 style={{ textAlign: 'center' }}>Галерея</h1>
       <SpaceObjectsPhotoContainer objectsSet={GallerySet} />
     </div>
   );

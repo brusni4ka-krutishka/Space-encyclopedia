@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 95%;
   margin: 2% auto;
 }
 .container > * {

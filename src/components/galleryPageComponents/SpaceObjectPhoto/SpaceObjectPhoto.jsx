@@ -21,8 +21,10 @@ export default function SpaceObjectPhoto({
           }
         }}
       >
-        <img className={ss.img} src={img} alt={alt} />
-        <h2 className={ss.undertext}>{undertext}</h2>
+        <div className={ss.inner_container}>
+          <img className={ss.img} src={img} alt={alt} />
+          <h2 className={ss.undertext}>{undertext}</h2>
+        </div>
       </div>
       {isModalOpen && (
         <ModalGallery
