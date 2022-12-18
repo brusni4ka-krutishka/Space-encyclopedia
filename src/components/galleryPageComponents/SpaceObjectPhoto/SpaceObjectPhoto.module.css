@@ -6,16 +6,17 @@
   align-items: center;
 }
 .inner_container {
-  background-color: #404040;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding: 6%;
 }
 .img {
   display: flex;
+  border-radius: 2%;
 }
 
 .undertext {
   display: flex;
+  text-align: center;
 }
