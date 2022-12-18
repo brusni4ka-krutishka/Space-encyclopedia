@@ -2,7 +2,7 @@ import React from 'react';
 import ss from './SpaceObjectsPhotoContainer.module.css';
 import SpecificSpaceObject from '../SpaceObjectsPhotoContainer/SpaceObjectsPhotoContainer.jsx';
 
-export default function SpecificSpaceObjectsContainer({ objectsSet }) {
+export default function SpaceObjectsPhotoContainer({ objectsSet }) {
   return (
     <div className={ss.container}>
       {objectsSet.map((object) => (

@@ -1,6 +1,6 @@
 import React from 'react';
 import ss from './SpaceObjectPhoto.module.css';
-export default function SpecificSpaceObject({
+export default function SpaceObjectPhoto({
   img,
   undertext,
   alt = 'Space Object',
