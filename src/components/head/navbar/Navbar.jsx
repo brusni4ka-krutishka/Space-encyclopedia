@@ -18,7 +18,6 @@ export default function Navbar() {
         </div>
       </div>
       <Link to={'/gallery'}>Галерея</Link>
-      <Link to={'/about'}>О нас</Link>
     </div>
   );
 }
