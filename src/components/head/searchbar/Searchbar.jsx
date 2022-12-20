@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ss from './searchbar.module.css';
 import { littlePlanetSet } from '../../../data/LittlePlanetsset.js';
 import { planetSet } from '../../../data/Planetset.js';
@@ -21,6 +21,9 @@ export default function Searchbar() {
   const [objectDescription, setObjectDescription] = useState('');
   const [characteristicsList, setCharacteristicsList] = useState('');
   const [intrestingFactsList, setIntrestingFactsList] = useState('');
+  useEffect(() => {
+    document.body.style.overflow = isModalOpen ? 'hidden' : 'visible';
+  }, [isModalOpen]);
 
   return (
     <div className={ss.container}>
