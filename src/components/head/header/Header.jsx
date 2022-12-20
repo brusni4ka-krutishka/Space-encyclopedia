@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Navbar from '../navbar/Navbar.jsx';
 import Searchbar from '../searchbar/Searchbar.jsx';
 import ss from './header.module.css';
@@ -15,9 +15,7 @@ export default function Header({ height = 100 }) {
       setContainerStyle({
         ...containerStyle,
         transform:
-          scrollY >= 100 && currentScrollY < scrollY
-            ? 'translateY(-100%)'
-            : 'translateY(0)',
+          scrollY >= 100 && currentScrollY < scrollY ? 'translateY(-100%)' : '',
       });
 
       setCurrentScrollY(scrollY);
@@ -34,8 +32,9 @@ export default function Header({ height = 100 }) {
       <div className={ss.navbar}>
         <Navbar />
       </div>
+
       <div className={ss.search}>
-        <Searchbar />
+        {useLocation().pathname !== '/' && <Searchbar />}
       </div>
     </div>
   );

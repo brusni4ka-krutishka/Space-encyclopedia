@@ -5,7 +5,7 @@ import { littlePlanetSet } from '../data/LittlePlanetsset.js';
 export default function CosmosPageLittlePlanets() {
   return (
     <div style={{ backgroundImage: `url(${bg})` }}>
-      <h1 style={{ textAlign: 'center' }}>Звезды</h1>
+      <h1 style={{ textAlign: 'center' }}>Карликовые планеты</h1>
       <SpecificSpaceObjectContainer objectsSet={littlePlanetSet} />
     </div>
   );

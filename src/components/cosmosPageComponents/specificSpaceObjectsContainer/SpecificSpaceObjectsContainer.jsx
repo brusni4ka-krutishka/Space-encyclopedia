@@ -10,6 +10,10 @@ export default function SpecificSpaceObjectsContainer({ objectsSet }) {
           img={object.img}
           undertext={object.undertext}
           key={object.img}
+          fact={object.fact}
+          description={object.description}
+          characteristicsList={object.characteristicsList}
+          intrestingFactsList={object.intrestingFactsList}
         />
       ))}
     </div>

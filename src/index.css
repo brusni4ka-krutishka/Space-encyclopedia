@@ -9,11 +9,11 @@ body {
   height: 100%;
   width: 100%;
 }
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 12px;
   background-color: #000000;
 }
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background: #898e94;
   border-radius: 20px;
 }

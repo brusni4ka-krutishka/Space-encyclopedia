@@ -1,14 +1,10 @@
 import React from 'react';
-import ModalSpaceObjects from '../../modalSpaceObjects/modalSpaceObjects.jsx';
-import ss from './specificSpaceObject.module.css';
-export default function SpecificSpaceObject({
+import ModalGallery from '../../modalGallery/ModalGallery.jsx';
+import ss from './SpaceObjectPhoto.module.css';
+export default function SpaceObjectPhoto({
   img,
   undertext,
   alt = 'Space Object',
-  fact,
-  description,
-  characteristicsList = [],
-  intrestingFactsList = [],
 }) {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   return (
@@ -25,17 +21,15 @@ export default function SpecificSpaceObject({
           }
         }}
       >
-        <img className={ss.img} src={img} alt={alt} />
-        <h2 className={ss.undertext}>{undertext}</h2>
+        <div className={ss.inner_container}>
+          <img className={ss.img} src={img} alt={alt} />
+          <h2 className={ss.undertext}>{undertext}</h2>
+        </div>
       </div>
       {isModalOpen && (
-        <ModalSpaceObjects
+        <ModalGallery
           objectName={undertext}
-          fact={fact}
           img={img}
-          characteristicsList={characteristicsList}
-          description={description}
-          intrestingFactsList={intrestingFactsList}
           closeCallback={setIsModalOpen}
         />
       )}
